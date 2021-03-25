@@ -1,0 +1,42 @@
+.l-block {
+	width: $width-l-block;
+	max-width: $max-width-l-block;
+}
+
+.l-section {
+	width: 100%;
+	padding: $padding-l-section;
+	background-color: $bg-l-section;
+}
+
+.l-block,
+.l-section {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.grid-container {
+	display: grid;
+	
+	@for $i from 1 through 5 {
+		&[class*="gap-#{$i}"],
+		&[class*=" gap-#{$i}"] {
+			gap: $i * 1em;
+		}
+	}
+
+	&[class*="gap-05"],
+	&[class*=" gap-05"] {
+		gap: .5em;
+	}
+
+	@each $bp, $value in $breakpoints {
+		@include from($bp) {
+			@for $i from 1 through 12 {
+				&[class*="#{$bp}-grid-#{$i}"] {
+					grid-template-columns: repeat($i, 1fr);
+				}
+			}
+		}
+	}
+}
