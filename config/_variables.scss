@@ -4,19 +4,16 @@ $body-color: #333;
 $border-color: #ccc;
 $bg-l-section: #fff;
 
-// Colors
-$color-1: seagreen;
-
 // Layout
 $width-l-block: 95%;
 $max-width-l-block: 1200px;
 $padding-l-section: 2.5rem 0;
-$height-main-header: 3.5rem;
+$height-main-header: 4rem;
 $height-main-footer: 15rem;
 
 $breakpoints: (
 	s: 0,     // Todos los tamaños
 	m: 40em,  // ~ 640px
-	lg: 64em,  // ~ 1024px
-	xl: 90em   // ~1440px
+	lg: 64em, // ~ 1024px
+	xl: 90em  // ~ 1440px
 );
