@@ -40,3 +40,102 @@
 		}
 	}
 }
+
+@for $i from 1 through 10 {
+	.m-#{$i} {
+		margin: $i * 1em;
+	}
+
+	.mt-#{$i} {
+		margin-top: $i * 1em;
+	}
+
+	.mr-#{$i} {
+		margin-right: $i * 1em;
+	}
+
+	.mb-#{$i} {
+		margin-bottom: $i * 1em;
+	}
+
+	.ml-#{$i} {
+		margin-left: $i * 1em;
+	}
+
+	.p-#{$i} {
+		padding: $i * 1em;
+	}
+
+	.pt-#{$i} {
+		padding-top: $i * 1em;
+	}
+
+	.pr-#{$i} {
+		padding-right: $i * 1em;
+	}
+
+	.pb-#{$i} {
+		padding-bottom: $i * 1em;
+	}
+
+	.pl-#{$i} {
+		padding-left: $i * 1em;
+	}
+
+}
+
+
+@each $bp, $value in $breakpoints {
+	@include from($bp) {
+		// margin
+		@for $i from 1 through 5 {
+			.#{$bp}-m-#{$i} {
+				margin: $i * 1em;
+			}
+
+			.#{$bp}-mt-#{$i} {
+				margin-top: $i * 1em;
+			}
+
+			.#{$bp}-mr-#{$i} {
+				margin-right: $i * 1em;
+			}
+
+			.#{$bp}-mb-#{$i} {
+				margin-bottom: $i * 1em;
+			}
+
+			.#{$bp}-ml-#{$i} {
+				margin-left: $i * 1em;
+			}
+		}
+
+		// padding
+		@for $i from 1 through 5 {
+			.#{$bp}-p-#{$i} {
+				padding: $i * 1em;
+			}
+
+			.#{$bp}-pt-#{$i} {
+				padding-top: $i * 1em;
+			}
+
+			.#{$bp}-pr-#{$i} {
+				padding-right: $i * 1em;
+			}
+
+			.#{$bp}-pb-#{$i} {
+				padding-bottom: $i * 1em;
+			}
+
+			.#{$bp}-pl-#{$i} {
+				padding-left: $i * 1em;
+			}
+		}
+	}
+}
+	
+.mx-auto {
+	margin-right: auto;
+	margin-left: auto;
+}
