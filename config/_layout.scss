@@ -1,12 +1,12 @@
 .l-block {
-	width: $width-l-block;
-	max-width: $max-width-l-block;
+	width: var(--width);
+	max-width: var(--max-width);
 }
 
 .l-section {
 	width: 100%;
-	padding: $padding-l-section;
-	background-color: $bg-l-section;
+	padding: var(--padding-l-section);
+	background-color: var(--color-bg-section);
 }
 
 .l-block,
@@ -17,6 +17,7 @@
 
 .l-grid {
 	display: grid;
+	max-width: var(--max-width);
 	
 	@for $i from 1 through 5 {
 		&[class*="gap-#{$i}"],
@@ -134,7 +135,7 @@
 		}
 	}
 }
-	
+
 .mx-auto {
 	margin-right: auto;
 	margin-left: auto;
