@@ -1,6 +1,7 @@
 :root {
 	// Colors
-	--color-1: #00BFA6;
+	// --color-1: #00BFA6;
+	--color-1: #3EAF7C;
 	--color-2: #3F3D56;
 
 	--color-bg-body: #FAFAFE;
@@ -12,8 +13,18 @@
 	--width: 90%;
 	--max-width: 75em;
 	--padding-l-section: 1.5rem 0;
-	--height-main-header: 4rem;
-	--height-main-footer: 10rem;
+	--height-main-header: 3.5rem;
+	--height-main-footer: 4rem;
+	--img-max-width: 100%;
+
+	// z-index
+	--z-back: -10;
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
+
+	--font-body: 'Poppins', sans-serif
 }
 	
 $breakpoints: (

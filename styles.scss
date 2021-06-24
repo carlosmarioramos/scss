@@ -1,8 +1,18 @@
 // Settings
-@import "./config/variables";
-@import "./config/base";
-@import "./config/mixins";
-@import "./config/layout";
-@import "./config/theme";
+	@import "./config/variables";
+	@import "./config/base";
+	@import "./config/mixins";
+	@import "./config/layout";
+	@import "./config/fonts";
+	@import "./config/theme";
+	@import "./config/icons";
 
 // Components
+	@import "./components/main-logo";
+	@import "./components/main-header";
+	@import "./components/main-nav";
+	@import "./components/main-banner";
+	@import "./components/about-me";
+	@import "./components/card-skill";
+	@import "./components/main-footer";
+	@import "./components/contact";
